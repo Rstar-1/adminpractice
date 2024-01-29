@@ -14,7 +14,7 @@ const Sidebar = () => {
       id: 2,
       name: "User Stories",
       icon: "user",
-      route: "userstory",
+      route: "dashboard",
     },
   ];
   const sidebarmenu2 = [
