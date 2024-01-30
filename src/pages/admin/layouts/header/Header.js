@@ -1,4 +1,5 @@
 import React from "react";
+import FeatherIcon from "feather-icons-react";
 
 const Header = () => {
   return (
@@ -17,8 +18,14 @@ const Header = () => {
         </div>
       </div>
       <div className="flex gap-10 items-center">
-        <button className="border-0 cursor-pointer font-500 textwhite rounded-5 ptpx10 pbpx10 plpx25 prpx25 fsize14 bgprimary">
-          Logout
+        <button className="border-0 cursor-pointer font-500 textwhite rounded-5 p7 fsize14 bgprimary">
+          <FeatherIcon icon="settings" size="21" className="flex" />
+        </button>
+        <button className="border-0 cursor-pointer font-500 textwhite rounded-5 p7 fsize14 bgsecondary">
+          <FeatherIcon icon="user" size="21" className="flex" />
+        </button>
+        <button className="border-0 cursor-pointer font-500 textwhite rounded-5 p7 fsize14 bgwarning">
+          <FeatherIcon icon="align-left" size="21" className="flex" />
         </button>
       </div>
     </div>

@@ -1,6 +1,6 @@
 /* ======================= Start-Color ======================= */
-$primary: #7367f0 !important;
-$secondary: #c54b8c !important;
+$primary: #60628f !important;
+$secondary: #276f8a !important;
 $tertiary: #1f1f1f !important;
 $forth: #0f172a !important;
 $success: #4bb543 !important;
@@ -437,11 +437,11 @@ tr:nth-child(even):hover {
 /* ======================= Start-Button ======================= */
 .primarybtn {
   background: transparent !important;
-  border: 1px solid #7367f0 !important;
-  color: #7367f0 !important;
+  border: 1px solid #60628f !important;
+  color: #60628f !important;
 }
 .primarybtn:hover {
-  background: #7367f0 !important;
+  background: #60628f !important;
   color: #fff !important;
 }
 .secondarybtn {
@@ -460,7 +460,7 @@ tr:nth-child(even):hover {
 }
 .whitebtn:hover {
   background: #fff !important;
-  color: #7367f0 !important;
+  color: #60628f !important;
 }
 /* ======================= End-Button ======================= */
 
@@ -524,7 +524,7 @@ tr:nth-child(even):hover {
   background: #e9e9f6 !important;
 }
 .bordactive-tab {
-  border-bottom: 2px solid #7367f0 !important;
+  border-bottom: 2px solid #60628f !important;
 }
 .bord-tab {
   border-bottom: 2px solid #ececec !important;
