@@ -1,8 +1,8 @@
 /* ======================= Start-Color ======================= */
 $primary: #7367f0 !important;
-$secondary: #e66465 !important;
+$secondary: #c54b8c !important;
 $tertiary: #1f1f1f !important;
-$forth: #555 !important;
+$forth: #0f172a !important;
 $success: #4bb543 !important;
 $warning: #ff5722 !important;
 $danger: red !important;
@@ -175,7 +175,6 @@ body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  overflow-wrap: anywhere !important;
 }
 a {
   text-decoration: none !important;
@@ -207,6 +206,14 @@ p {
 .up-img {
   width: 25px !important;
   height: 25px !important;
+  @media (max-width: 640px) {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
+.success-img {
+  width: 65px !important;
+  height: 65px !important;
   @media (max-width: 640px) {
     width: 20px !important;
     height: 20px !important;
@@ -251,12 +258,32 @@ p {
 .d-shadow {
   box-shadow: 0 2px 12px 0 #0000001a !important;
 }
-.next {
-  width: 30px !important;
-  height: 30px !important;
-  border-radius: 50% !important;
-}
 /* ======================= End-Maincss ======================= */
+
+/* ======================= Start-Pagination ======================= */
+.pagination {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.pagination li {
+  background: #ececec;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  border-radius: 5%;
+  justify-content: center;
+  align-items: center;
+  color: #111;
+  cursor: pointer;
+}
+.pagination .selected {
+  background: $primary;
+  color: $white;
+}
+/* ======================= End-Pagination ======================= */
 
 /* ======================= Start-loader ======================= */
 .loader {
@@ -363,8 +390,8 @@ td {
   padding: 8px;
 }
 th {
-  background: $primary;
-  border: 1px solid #fff;
+  background: #f4f5f6;
+  border: 1px solid #ebeef5;
   text-align: left;
   padding: 10px;
 }
@@ -388,11 +415,22 @@ tr:nth-child(even):hover {
 .side-input {
   width: 95% !important;
 }
-.category-input {
-  width: 97% !important;
+.border-images {
+  border: 1px dashed #3d3c3c !important;
+  height: 190px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 10px !important;
 }
-.textarea-input {
-  width: 94% !important;
+.img-input {
+  width: 93.5% !important;
+  height: 190px !important;
+  opacity: 0 !important;
+}
+.side-img {
+  width: 350px !important;
+  height: 350px !important;
 }
 /* ======================= End-Table ======================= */
 
@@ -445,6 +483,10 @@ tr:nth-child(even):hover {
   width: 20px !important;
   height: 20px !important;
 }
+.sidebar-img {
+  width: 120px !important;
+  height: 120px !important;
+}
 /* ======================= End-Sidebar ======================= */
 
 /* ======================= Start-Header ======================= */
@@ -457,55 +499,49 @@ tr:nth-child(even):hover {
 }
 /* ======================= End-Header ======================= */
 
+/* ======================= Start-Login ======================= */
+.w-login {
+  width: 97% !important;
+}
+/* ======================= End-Login ======================= */
+
 /* ======================= Start-dashboard ======================= */
-.border-d {
-  border-radius: 10px 0 0 0 !important;
+.h-dash {
+  height: 150px !important;
 }
-.dash2img {
-  width: 100px !important;
-  height: 100px !important;
-}
-.dash3img {
-  width: 100% !important;
-  height: 170px !important;
-}
-.profile-images {
+.social-img {
   width: 60px !important;
   height: 60px !important;
 }
-.border-white {
-  border: 10px solid #fff !important;
-}
-.minus-dash {
-  margin-top: -40px !important;
-}
-.dash-scroll {
-  overflow-y: auto !important;
-  height: 86vh !important;
-}
 /* ======================= End-dashboard ======================= */
 
-/* ======================= Start-ViewBlog ======================= */
-.viewimg {
+/* ======================= Start-cms ======================= */
+.cms-img {
   width: 100% !important;
-  height: 170px !important;
-}
-/* ======================= End-ViewBlog ======================= */
-
-/* ======================= Start-AddBlog ======================= */
-////
-/* ======================= End-AddBlog ======================= */
-
-/* ======================= Start-EditBlog ======================= */
-.edit-img {
-  width: 100%!important;
   height: 50px !important;
 }
-/* ======================= End-EditBlog ======================= */
-
-/* ======================= Start-Version ======================= */
-.versionimg {
-  width: 100% !important;
-  height: 170px !important;
+.hover-cms {
+  background: #e9e9f6 !important;
 }
-/* ======================= End-Version ======================= */
+.bordactive-tab {
+  border-bottom: 2px solid #7367f0 !important;
+}
+.bord-tab {
+  border-bottom: 2px solid #ececec !important;
+}
+.cms-image {
+  width: 50px !important;
+  height: 50px !important;
+}
+.cms-edit-img {
+  width: 30% !important;
+  height: 150px !important;
+}
+/* ======================= End-cms ======================= */
+
+/* ======================= Start-bill ======================= */
+.bill-img {
+  width: 50px !important;
+  height: 50px !important;
+}
+/* ======================= End-bill ======================= */
